@@ -22,12 +22,15 @@
             color: darkgray
         }
         #spis{
-            position: sticky;
+            pposition: sticky;
                 top: 0px;
         }
         .overlap{
-            position:absolute;
+            position: absolute;
             z-index: 0;
+        }
+        .stick{
+            position: sticky;
         }
         table{
             border: solid;
@@ -55,7 +58,7 @@
 
 
 
-    <table align="left" style="font-size:30px" id="spis" class="overlap">
+    <table align="left" style="font-size:30px" id="spis" class="overlap" class="stick">
         <tr>
             <td><b><u>Spis treści</u></b></td>
         </tr>
@@ -72,7 +75,7 @@
 
 
 
-    <table align="center" class="overlap">
+    <table align="center">
         <tr>
             <td><p style="font-size:90px" id="about"><b><u>O grze</u></b></p></td>
         </tr>
@@ -82,7 +85,7 @@
     </table>
 
   
-    <table align="center" class="overlap">
+    <table align="center">
         <tr>
             <td><p style="font-size:90px" id="music"><b><u>Muzyka w grze</u></b></p></td>
         </tr>
