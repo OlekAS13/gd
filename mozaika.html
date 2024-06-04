@@ -1,42 +1,37 @@
 
-<!-- saved from url=(0041)file:///Users/anst/Downloads/mozaika.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	
+<html>
+	<head>
 		
-</head>
-<body>
-	<table width="50px" height="50px">
-		<tbody><tr>
-			<td id="0" colspan="2" style="background-color: rgb(150, 232, 152);"></td>
-			<td id="1" style="background-color: rgb(38, 74, 66);"></td>
-		</tr>
-		<tr>
-			<td id="2" style="background-color: rgb(122, 209, 77);"></td>
-			<td id="3" style="background-color: rgb(185, 9, 181);"></td>
-			<td id="4" style="background-color: rgb(169, 162, 209);"></td>
-		</tr>
-		<tr>
-			<td id="5" style="background-color: rgb(255, 225, 149);"></td>
-			<td id="6" colspan="2" style="background-color: rgb(136, 78, 69);"></td>
-		</tr>
-	</tbody></table>
-	<script>
-		function getRandom(max) {
-			return Math.floor(Math.random() * max);
-		}
+	
+	</head>
+	<body>
+		<table width="50px" height="50px">
+			<tr>
+				<td id="0" colspan="2"></td>
+				<td id="1"></td>
+			</tr>
+			<tr>
+				<td id="2"></td>
+				<td id="3"></td>
+				<td id="4"></td>
+			</tr>
+			<tr>
+				<td id="5"></td>
+				<td id="6" colspan="2"></td>
+			</tr>
+		</table>
+		<script>
+			function getRandom(max) {
+				return Math.floor(Math.random() * max);
+			}
 
-		function rgb(r, g, b){
-			return `rgb(${r}, ${g}, ${b})`
-		}
+			function koloruj() {
+				let i = getRandom(7);
+				let element = document.getElementById(i.toString());
+				element.style.backgroundColor = `rgb(${getRandom(256)} ${getRandom(256)} ${getRandom(256)})`;
+			}
 
-		function koloruj() {
-			let i = getRandom(7);
-			let element = document.getElementById(i.toString());
-			element.style.backgroundColor = rgb(getRandom(256), getRandom(256), getRandom(256));
-		}
-
-		setInterval(koloruj, 5);
-	</script>
-
-
-</body></html>
+			setInterval(koloruj, 5);
+		</script>
+	</body>
+</html>
